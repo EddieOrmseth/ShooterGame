@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ShooterGame">
+      <UniqueIdentifier>{c84b0b6c-5756-442b-81b0-12bbaef640ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShooterGame\Util">
+      <UniqueIdentifier>{fc61ec2b-8a2f-49d1-9254-84feed9249c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShooterGame\Engines">
+      <UniqueIdentifier>{ac58d03f-649f-41e6-ab60-7a4dc37e7209}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShooterGame\Objects">
+      <UniqueIdentifier>{38990f69-e52a-4a76-ac8c-d8b16769c0a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShooterGame\Objects\ScreenObjects">
+      <UniqueIdentifier>{b92b5b5c-ebe4-48d7-b102-6d67c846f46a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShooterGame\Objects\MotionObjects">
+      <UniqueIdentifier>{0ac1a244-be5f-40eb-a9d7-e00ac2ddaaf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShooterGame\VehicleExtensions">
+      <UniqueIdentifier>{9ede1d6a-0958-483a-b9fc-e795f9a91926}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShooterGame\VehicleExtensions\Afterburner">
+      <UniqueIdentifier>{fb1b0a24-f0cf-4b30-a79f-c66512b00e72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShooterGame\VehicleExtensions\Projectiles">
+      <UniqueIdentifier>{30e30a81-a42a-477b-a27b-c30f5814e2d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShooterGame\PresetObjects">
+      <UniqueIdentifier>{75b0025c-0b1c-47a3-b6ab-bd379a8d8d17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShooterGame\PresetObjects\VehicleObjects">
+      <UniqueIdentifier>{a565391d-cebd-4396-b1ba-4211ba14a6e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShooterGame\PresetObjects\Targets">
+      <UniqueIdentifier>{7fdcfcb0-cc89-4434-bfe3-392bfac0fd6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShooterGame\VehicleExtensions\Projectiles\Projectiles">
+      <UniqueIdentifier>{9b9daed6-894c-4614-9b65-a090cc774574}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShooterGame\VehicleExtensions\Grease">
+      <UniqueIdentifier>{893ce117-37cf-481b-8478-13a79197a0a8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ShooterGame.cpp">
+      <Filter>ShooterGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>ShooterGame\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenObject.cpp">
+      <Filter>ShooterGame\Objects\ScreenObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenRectangle.cpp">
+      <Filter>ShooterGame\Objects\ScreenObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenCircle.cpp">
+      <Filter>ShooterGame\Objects\ScreenObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="MotionObject.cpp">
+      <Filter>ShooterGame\Objects\MotionObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="SpaceStyleControlledObject.cpp">
+      <Filter>ShooterGame\Objects\MotionObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenCircleTank.cpp">
+      <Filter>ShooterGame\Objects\ScreenObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsEngine.cpp">
+      <Filter>ShooterGame\Engines</Filter>
+    </ClCompile>
+    <ClCompile Include="InputRegistry.cpp">
+      <Filter>ShooterGame\Engines</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsEngine.cpp">
+      <Filter>ShooterGame\Engines</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>ShooterGame\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine.cpp">
+      <Filter>ShooterGame\Engines</Filter>
+    </ClCompile>
+    <ClCompile Include="CarControlledObject.cpp">
+      <Filter>ShooterGame\Objects\MotionObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Afterburner.cpp">
+      <Filter>ShooterGame\VehicleExtensions\Afterburner</Filter>
+    </ClCompile>
+    <ClCompile Include="ShootCapable.cpp">
+      <Filter>ShooterGame\VehicleExtensions\Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="StandardCannon.cpp">
+      <Filter>ShooterGame\VehicleExtensions\Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="SpaceStyleFixedCannon.cpp">
+      <Filter>ShooterGame\PresetObjects\VehicleObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="AfterburnCapable.cpp">
+      <Filter>ShooterGame\VehicleExtensions\Afterburner</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenRectangleTank.cpp">
+      <Filter>ShooterGame\Objects\ScreenObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="CarStyleFixedCannon.cpp">
+      <Filter>ShooterGame\PresetObjects\VehicleObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="CircleTarget.cpp">
+      <Filter>ShooterGame\PresetObjects\Targets</Filter>
+    </ClCompile>
+    <ClCompile Include="RectangleTarget.cpp">
+      <Filter>ShooterGame\PresetObjects\Targets</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletObject.cpp">
+      <Filter>ShooterGame\VehicleExtensions\Projectiles\Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="ArtilleryGun.cpp">
+      <Filter>ShooterGame\VehicleExtensions\Projectiles\Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Greasable.cpp">
+      <Filter>ShooterGame\VehicleExtensions\Grease</Filter>
+    </ClCompile>
+    <ClCompile Include="Grease.cpp">
+      <Filter>ShooterGame\VehicleExtensions\Grease</Filter>
+    </ClCompile>
+    <ClCompile Include="GreaseCannon.cpp">
+      <Filter>ShooterGame\VehicleExtensions\Projectiles\Projectiles</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Util.hpp">
+      <Filter>ShooterGame\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenObject.hpp">
+      <Filter>ShooterGame\Objects\ScreenObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenRectangle.hpp">
+      <Filter>ShooterGame\Objects\ScreenObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenCircle.hpp">
+      <Filter>ShooterGame\Objects\ScreenObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="MotionObject.hpp">
+      <Filter>ShooterGame\Objects\MotionObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceStyleControlledObject.hpp">
+      <Filter>ShooterGame\Objects\MotionObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenCircleTank.hpp">
+      <Filter>ShooterGame\Objects\ScreenObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsEngine.hpp">
+      <Filter>ShooterGame\Engines</Filter>
+    </ClInclude>
+    <ClInclude Include="InputRegistry.hpp">
+      <Filter>ShooterGame\Engines</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsEngine.hpp">
+      <Filter>ShooterGame\Engines</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.hpp">
+      <Filter>ShooterGame\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine.hpp">
+      <Filter>ShooterGame\Engines</Filter>
+    </ClInclude>
+    <ClInclude Include="CarControlledObject.hpp">
+      <Filter>ShooterGame\Objects\MotionObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Afterburner.hpp">
+      <Filter>ShooterGame\VehicleExtensions\Afterburner</Filter>
+    </ClInclude>
+    <ClInclude Include="ShootCapable.hpp">
+      <Filter>ShooterGame\VehicleExtensions\Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="StandardCannon.hpp">
+      <Filter>ShooterGame\VehicleExtensions\Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceStyleFixedCannon.hpp">
+      <Filter>ShooterGame\PresetObjects\VehicleObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="AfterburnCapable.hpp">
+      <Filter>ShooterGame\VehicleExtensions\Afterburner</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenRectangleTank.hpp">
+      <Filter>ShooterGame\Objects\ScreenObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="CarStyleFixedCannon.hpp">
+      <Filter>ShooterGame\PresetObjects\VehicleObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="CircleTarget.hpp">
+      <Filter>ShooterGame\PresetObjects\Targets</Filter>
+    </ClInclude>
+    <ClInclude Include="RectangleTarget.hpp">
+      <Filter>ShooterGame\PresetObjects\Targets</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletObject.hpp">
+      <Filter>ShooterGame\VehicleExtensions\Projectiles\Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="ArtilleryGun.hpp">
+      <Filter>ShooterGame\VehicleExtensions\Projectiles\Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Greasable.hpp">
+      <Filter>ShooterGame\VehicleExtensions\Grease</Filter>
+    </ClInclude>
+    <ClInclude Include="Grease.hpp">
+      <Filter>ShooterGame\VehicleExtensions\Grease</Filter>
+    </ClInclude>
+    <ClInclude Include="GreaseCannon.hpp">
+      <Filter>ShooterGame\VehicleExtensions\Projectiles\Projectiles</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
