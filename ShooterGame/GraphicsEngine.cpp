@@ -1,5 +1,6 @@
 #include "GraphicsEngine.hpp"
 #include <iostream>
+#include "InputRegistry.hpp"
 #define TIMERID_1 1
 
 std::vector<GraphicsEngine*>* GraphicsEngine::graphicsEngines;

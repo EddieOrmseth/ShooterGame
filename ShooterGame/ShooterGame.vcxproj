@@ -29,26 +29,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -141,15 +141,20 @@
   <ItemGroup>
     <ClCompile Include="AfterburnCapable.cpp" />
     <ClCompile Include="Afterburner.cpp" />
+    <ClCompile Include="Array.cpp" />
     <ClCompile Include="ArtilleryGun.cpp" />
+    <ClCompile Include="BasicConnection.cpp" />
     <ClCompile Include="BulletObject.cpp" />
     <ClCompile Include="CarStyleFixedCannon.cpp" />
     <ClCompile Include="CircleTarget.cpp" />
     <ClCompile Include="Greasable.cpp" />
     <ClCompile Include="Grease.cpp" />
     <ClCompile Include="GreaseCannon.cpp" />
+    <ClCompile Include="Network.cpp" />
     <ClCompile Include="RectangleTarget.cpp" />
+    <ClCompile Include="RequestConnection.cpp" />
     <ClCompile Include="ScreenRectangleTank.cpp" />
+    <ClCompile Include="Sendable.cpp" />
     <ClCompile Include="SpaceStyleFixedCannon.cpp" />
     <ClCompile Include="StandardCannon.cpp" />
     <ClCompile Include="ShootCapable.cpp" />
@@ -166,20 +171,26 @@
     <ClCompile Include="ScreenRectangle.cpp" />
     <ClCompile Include="ShooterGame.cpp" />
     <ClCompile Include="SpaceStyleControlledObject.cpp" />
+    <ClCompile Include="TransmissionConnection.cpp" />
     <ClCompile Include="Util.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AfterburnCapable.hpp" />
     <ClInclude Include="Afterburner.hpp" />
+    <ClInclude Include="Array.hpp" />
     <ClInclude Include="ArtilleryGun.hpp" />
+    <ClInclude Include="BasicConnection.hpp" />
     <ClInclude Include="BulletObject.hpp" />
     <ClInclude Include="CarStyleFixedCannon.hpp" />
     <ClInclude Include="CircleTarget.hpp" />
     <ClInclude Include="Greasable.hpp" />
     <ClInclude Include="Grease.hpp" />
     <ClInclude Include="GreaseCannon.hpp" />
+    <ClInclude Include="Network.hpp" />
     <ClInclude Include="RectangleTarget.hpp" />
+    <ClInclude Include="RequestConnection.hpp" />
     <ClInclude Include="ScreenRectangleTank.hpp" />
+    <ClInclude Include="Sendable.hpp" />
     <ClInclude Include="SpaceStyleFixedCannon.hpp" />
     <ClInclude Include="StandardCannon.hpp" />
     <ClInclude Include="ShootCapable.hpp" />
@@ -195,6 +206,7 @@
     <ClInclude Include="ScreenObject.hpp" />
     <ClInclude Include="ScreenRectangle.hpp" />
     <ClInclude Include="SpaceStyleControlledObject.hpp" />
+    <ClInclude Include="TransmissionConnection.hpp" />
     <ClInclude Include="Util.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

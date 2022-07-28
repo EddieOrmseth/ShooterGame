@@ -43,6 +43,15 @@
     <Filter Include="ShooterGame\VehicleExtensions\Grease">
       <UniqueIdentifier>{893ce117-37cf-481b-8478-13a79197a0a8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ShooterGame\NetworkingStuff">
+      <UniqueIdentifier>{6968c095-ed88-4e36-b09a-ef262942b46b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShooterGame\NetworkingStuff\ClientServer">
+      <UniqueIdentifier>{7629786e-9c0f-4469-95ae-a9ecb805cfa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShooterGame\NetworkingStuff\Util">
+      <UniqueIdentifier>{4321ac95-ade1-4180-a9c7-5834d4c411f6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ShooterGame.cpp">
@@ -129,6 +138,24 @@
     <ClCompile Include="GreaseCannon.cpp">
       <Filter>ShooterGame\VehicleExtensions\Projectiles\Projectiles</Filter>
     </ClCompile>
+    <ClCompile Include="BasicConnection.cpp">
+      <Filter>ShooterGame\NetworkingStuff\ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="Network.cpp">
+      <Filter>ShooterGame\NetworkingStuff\ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestConnection.cpp">
+      <Filter>ShooterGame\NetworkingStuff\ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="Sendable.cpp">
+      <Filter>ShooterGame\NetworkingStuff\ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TransmissionConnection.cpp">
+      <Filter>ShooterGame\NetworkingStuff\ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="Array.cpp">
+      <Filter>ShooterGame\NetworkingStuff\Util</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Util.hpp">
@@ -211,6 +238,24 @@
     </ClInclude>
     <ClInclude Include="GreaseCannon.hpp">
       <Filter>ShooterGame\VehicleExtensions\Projectiles\Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicConnection.hpp">
+      <Filter>ShooterGame\NetworkingStuff\ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Network.hpp">
+      <Filter>ShooterGame\NetworkingStuff\ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestConnection.hpp">
+      <Filter>ShooterGame\NetworkingStuff\ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Sendable.hpp">
+      <Filter>ShooterGame\NetworkingStuff\ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="TransmissionConnection.hpp">
+      <Filter>ShooterGame\NetworkingStuff\ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Array.hpp">
+      <Filter>ShooterGame\NetworkingStuff\Util</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

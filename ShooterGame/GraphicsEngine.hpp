@@ -1,10 +1,11 @@
 #pragma once
 #include <vector>
 #include <windows.h>
-#include "InputRegistry.hpp"
 #include <objidl.h>
 #include <gdiplus.h>
 #pragma comment (lib,"Gdiplus.lib")
+
+class InputRegistry;
 
 class Paintable;
 

@@ -1,7 +1,21 @@
+// Network Stuff
+#include <thread>
+#include <string>
+#include "Network.hpp"
+#include "BasicConnection.hpp"
+#include "Array.hpp"
+#include "Sendable.hpp"
+#include "RequestConnection.hpp"
+
+//#define SERVER
+#define SENDING_TRANSMISSION
+
+
 #include <iostream>
 #include <functional>
 #include "GameEngine.hpp"
 #include "GraphicsEngine.hpp"
+#include "InputRegistry.hpp"
 
 #include "SpaceStyleControlledObject.hpp"
 #include "SpaceStyleFixedCannon.hpp"
@@ -19,6 +33,25 @@
 #include "GreaseCannon.hpp"
 
 int main() {
+
+
+	Network::InitializeNetwork();
+
+	BasicConnection* connection;
+
+#ifdef SERVER
+	std::cout << "Waiting For Connection" << std::endl;
+	connection = Network::WaitForConnection(AF_INET, SOCK_STREAM, IPPROTO::IPPROTO_TCP, AI_PASSIVE, std::string("50800"));
+#else
+	std::cout << "Requesting Connection" << std::endl;
+	connection = Network::TransmissionConnection(AF_UNSPEC, SOCK_STREAM, IPPROTO::IPPROTO_TCP, 0, std::string("50801"), std::string("159.118.186.175"));
+#endif
+
+	RequestConnection* requestConnection = new RequestConnection(connection);
+
+
+
+
 
     GameEngine* gameEngine = new GameEngine();
 
@@ -75,6 +108,13 @@ int main() {
 		// Do Stuff
 		gameEngine->getInputRegistry()->handleAllKeyInput();
 		gameEngine->update();
+
+#ifdef SENDING_TRANSMISSION
+
+#else
+
+#endif
+
 	}
     
 }
